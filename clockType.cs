@@ -23,12 +23,13 @@ namespace Clock
         }
         public void Time()
         {
+            Console.WriteLine("Clock :");
             Console.WriteLine(hours+" : "+minutes+" : "+seconds+" ");
             timeincrease();
         }
         public void timeincrease()
         {
-            Thread.Sleep(100);
+            Thread.Sleep(1000);
             Console.SetCursorPosition(0,0);
             seconds++;
             if (seconds >= 60)
